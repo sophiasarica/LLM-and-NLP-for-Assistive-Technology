@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./llm_chat.css" />
+    <script type="module">
+      import './app.js';
+    </script>
+  </head>
+  <body>
+    <button id="listen-btn">Start</button>
+    <button id="stop-btn">Stop</button>
+    <!-- <button id="stop-model-btn">Stop Model</button> -->
+
+    <span class="state" id="state"></span>
+
+    <h2>Personal Virtual Assistant</h2>
+    <div class="chatui">
+      <div class="chatui-chat" id="chatui-chat" height="100"></div>
+      <div class="chatui-inputarea">
+        <input
+          id="chatui-input"
+          type="text"
+          class="chatui-input"
+          placeholder="Enter your message..."
+        />
+        <button id="chatui-send-btn" class="chatui-send-btn">Send</button>
+      </div>
+    </div>
+
+    <div id="generate-label"></div>
+    <!-- <div id="ai_output" style="display: none;"></div> -->
+  </body>
+</html>
